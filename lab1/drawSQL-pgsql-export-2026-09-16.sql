@@ -1,10 +1,10 @@
 CREATE TABLE "Сотрудник"(
     "№ТК" BIGINT NOT NULL,
-    "Фамилия" TEXT NOT NULL,
+    "Фамилия" VARCHAR(255) NOT NULL,
     "Дата Устройства" DATE NOT NULL,
     "Дата Рождения" DATE NOT NULL,
-    "Адрес" TEXT NOT NULL,
-    "Телефон" TEXT NOT NULL,
+    "Адрес" VARCHAR(255) NOT NULL,
+    "Телефон" VARCHAR(255) NOT NULL,
     "id Должности" BIGINT NOT NULL
 );
 ALTER TABLE
@@ -13,8 +13,8 @@ ALTER TABLE
     "Сотрудник" ADD CONSTRAINT "Сотрудник_Телефон_unique" UNIQUE("Телефон");
 CREATE TABLE "ТипыРабот"(
     "id ТипаРаботы" BIGINT NOT NULL,
-    "ТипРаботы" TEXT NOT NULL,
-    "ОписаниеТипа" TEXT NOT NULL,
+    "ТипРаботы" VARCHAR(255) NOT NULL,
+    "ОписаниеТипа" VARCHAR(255) NOT NULL,
     "ЦенаЧаса" DECIMAL(8, 2) NOT NULL
 );
 ALTER TABLE
@@ -30,8 +30,8 @@ ALTER TABLE
     "ВыполненнаяРабота" ADD PRIMARY KEY("id ВыполненнойРаботы");
 CREATE TABLE "ОсвобождениеОтНалога"(
     "id Льготы" BIGINT NOT NULL,
-    "НазваниеЛьготы" TEXT NOT NULL,
-    "ОписаниеЛьготы" TEXT NOT NULL
+    "НазваниеЛьготы" VARCHAR(255) NOT NULL,
+    "ОписаниеЛьготы" VARCHAR(255) NOT NULL
 );
 ALTER TABLE
     "ОсвобождениеОтНалога" ADD PRIMARY KEY("id Льготы");
@@ -49,8 +49,8 @@ ALTER TABLE
     "НачислениеЗП" ADD PRIMARY KEY("id Операции");
 CREATE TABLE "Должность"(
     "id Должности" BIGINT NOT NULL,
-    "НазваниеДолжности" TEXT NOT NULL,
-    "Описание" TEXT NOT NULL
+    "НазваниеДолжности" VARCHAR(255) NOT NULL,
+    "Описание" VARCHAR(255) NOT NULL
 );
 ALTER TABLE
     "Должность" ADD PRIMARY KEY("id Должности");

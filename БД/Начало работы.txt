@@ -1,0 +1,10 @@
+Для 1 лабы:
+https://drawsql.app/register/  — сервис для проектирования БД 
+ 
+Не забудьте нормализовать получившуюся базу данных.
+Варианты — номера в списке группы.
+ 
+Для 2-9:
+https://www.postgresql.org/download/ СУБД
+https://www.pgadmin.org/  клиент СУБД (ставить его)
+https://postgrespro.ru/docs/postgresql/14/index  документация на русском
